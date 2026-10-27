@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="日月潭觀光導覽暨交流協會：日月潭在地導覽老師組成的協會，飯店與團體導覽需求由協會窗口統一接洽。">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>協會活動｜日月潭觀光導覽暨交流協會</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Barlow+Condensed:ital,wght@1,700;1,800&display=swap">
+<link rel="stylesheet" href="style.css">
+<style>
+.act { display: flex; flex-direction: column; gap: 12px; text-decoration: none; }
+.act .ph { aspect-ratio: 16 / 10; }
+.act .ph .tag { position: absolute; left: 0; top: 0; }
+.act b { font-size: 19px; font-weight: 900; line-height: 1.5; }
+.act:hover b { color: var(--accent); }
+</style>
+</head>
+<body data-page="activities">
+<div id="site-header"></div>
+<main>
+
+<section class="wrap band-wrap">
+  <h1 class="band">協會活動</h1>
+  <div class="chips" data-filter-for="act-list" role="group" aria-label="活動類型">
+    <button class="chip" type="button" data-filter="全部" aria-pressed="true">全部</button>
+    <button class="chip" type="button" data-filter="課程" aria-pressed="false">課程</button>
+    <button class="chip" type="button" data-filter="講座" aria-pressed="false">講座</button>
+    <button class="chip" type="button" data-filter="參訪" aria-pressed="false">參訪</button>
+  </div>
+</section>
+
+<section class="wrap section">
+  <div class="grid wide" id="act-list">
+    <a class="act" href="activity.html" data-kind="課程"><div class="ph">[ 活動照片 ]<span class="tag solid">課程</span></div><span class="tag" style="align-self: flex-start; border: 0; padding: 0">[日期]・[地點]</span><b>[活動名稱]</b><span class="muted" style="font-size: 14px">[一兩句活動摘要]</span></a>
+    <a class="act" href="activity.html" data-kind="參訪"><div class="ph">[ 活動照片 ]<span class="tag solid">參訪</span></div><span class="tag" style="align-self: flex-start; border: 0; padding: 0">[日期]・[地點]</span><b>[活動名稱]</b><span class="muted" style="font-size: 14px">[一兩句活動摘要]</span></a>
+    <a class="act" href="activity.html" data-kind="講座"><div class="ph">[ 活動照片 ]<span class="tag solid">講座</span></div><span class="tag" style="align-self: flex-start; border: 0; padding: 0">[日期]・[地點]</span><b>[活動名稱]</b><span class="muted" style="font-size: 14px">[一兩句活動摘要]</span></a>
+    <a class="act" href="activity.html" data-kind="課程"><div class="ph">[ 活動照片 ]<span class="tag solid">課程</span></div><span class="tag" style="align-self: flex-start; border: 0; padding: 0">[日期]・[地點]</span><b>[活動名稱]</b><span class="muted" style="font-size: 14px">[一兩句活動摘要]</span></a>
+    <a class="act" href="activity.html" data-kind="參訪"><div class="ph">[ 活動照片 ]<span class="tag solid">參訪</span></div><span class="tag" style="align-self: flex-start; border: 0; padding: 0">[日期]・[地點]</span><b>[活動名稱]</b><span class="muted" style="font-size: 14px">[一兩句活動摘要]</span></a>
+    <a class="act" href="activity.html" data-kind="講座"><div class="ph">[ 活動照片 ]<span class="tag solid">講座</span></div><span class="tag" style="align-self: flex-start; border: 0; padding: 0">[日期]・[地點]</span><b>[活動名稱]</b><span class="muted" style="font-size: 14px">[一兩句活動摘要]</span></a>
+  </div>
+</section>
+
+</main>
+<div id="site-footer"></div>
+<script src="config.js"></script>
+<script src="site.js"></script>
+<script src="data.js"></script>
+</body>
+</html>

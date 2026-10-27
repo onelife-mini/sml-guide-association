@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="日月潭觀光導覽暨交流協會：日月潭在地導覽老師組成的協會，飯店與團體導覽需求由協會窗口統一接洽。">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>會員專區｜日月潭觀光導覽暨交流協會</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Barlow+Condensed:ital,wght@1,700;1,800&display=swap">
+<link rel="stylesheet" href="style.css">
+<style>
+.tab { font: inherit; text-align: left; cursor: pointer; padding: 20px 22px; display: flex; flex-direction: column; gap: 4px; border: 2px solid var(--line); background: var(--bg); color: var(--fg); }
+.tab .en { font-size: 22px; }
+.tab b { font-size: 18px; }
+.tab small { font-size: 13px; color: var(--muted); }
+.tab[aria-selected="true"] { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+.tab[aria-selected="true"] .en, .tab[aria-selected="true"] small { color: var(--on-accent); }
+.rule { display: flex; gap: 20px; padding-block: 16px; border-top: 1px solid var(--line); }
+.rule .en { font-size: 28px; min-width: 40px; }
+.kanban { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); }
+.case { background: var(--bg); padding: 16px; border-top: 3px solid var(--accent); display: flex; flex-direction: column; gap: 4px; }
+</style>
+</head>
+<body data-page="members">
+<div id="site-header"></div>
+<main>
+
+<section class="wrap band-wrap">
+  <h1 class="band">會員專區</h1>
+  <span class="panel" style="padding: 10px 16px; font-size: 14px; color: var(--muted)">僅限協會會員｜[登入方式待定]</span>
+</section>
+
+<section class="wrap" style="padding-top: 48px">
+  <div class="grid" role="tablist" aria-label="會員專區" style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 16px">
+    <button class="tab" type="button" role="tab" data-tab="rules" aria-controls="panel-rules"><b>接團規則</b><small>案源歸屬、派案、回繳</small></button>
+    <button class="tab" type="button" role="tab" data-tab="report" aria-controls="panel-report"><b>案件申報</b><small>飯店直接找你時填寫</small></button>
+    <button class="tab" type="button" role="tab" data-tab="board" aria-controls="panel-board"><b>案件看板</b><small>統一接案的進度</small></button>
+    <button class="tab" type="button" role="tab" data-tab="meetings" aria-controls="panel-meetings"><b>會議紀錄</b><small>會員大會與理監事會</small></button>
+  </div>
+</section>
+
+<section class="wrap" style="padding-top: 24px">
+  <div class="boxed row" style="justify-content: space-between; align-items: center; padding: 18px 24px">
+    <span><b>還沒交老師資料？</b><span class="muted" style="font-size: 14px">　填好後協會會放上「導覽老師」頁，照片請用 LINE 傳給窗口。</span></span>
+    <a class="btn ghost" href="teacher-form.html" style="padding: 10px 24px; font-size: 15px">填寫老師資料表</a>
+  </div>
+</section>
+
+<section class="wrap section" style="padding-top: 40px">
+
+  <div class="panel" id="panel-rules" role="tabpanel" style="padding: clamp(24px, 4vw, 40px); gap: 8px">
+    <h2 style="font-size: 24px; margin-bottom: 8px">接團規則</h2>
+    <div class="rule"><span class="num">1</span><div class="stack" style="gap: 4px"><b>協會案源</b><span class="muted">協會開發或以協會名義接洽的客戶，自首次接洽起 [期間] 內屬協會案源。</span></div></div>
+    <div class="rule"><span class="num">2</span><div class="stack" style="gap: 4px"><b>派案方式</b><span class="muted">依輪值順序派案；飯店指定老師時，優先安排指定老師。</span></div></div>
+    <div class="rule"><span class="num">3</span><div class="stack" style="gap: 4px"><b>直接聯絡的申報</b><span class="muted">協會案源直接聯絡老師時，須於帶團後 [天數] 天內申報。</span></div></div>
+    <div class="rule"><span class="num">4</span><div class="stack" style="gap: 4px"><b>回繳比例</b><span class="muted">[待理監事會訂定]</span></div></div>
+    <div class="rule"><span class="num">5</span><div class="stack" style="gap: 4px"><b>未申報處理</b><span class="muted">提醒 → 理監事會討論 → 暫停派案。</span></div></div>
+  </div>
+
+  <div id="panel-report" role="tabpanel" hidden>
+<form class="form-card" data-send="report" data-done="已收到申報，謝謝你依規則回報。">
+  <h2>案件申報</h2>
+  <div class="notice"><span class="ic" aria-hidden="true">✓</span><div><small>什麼時候要填</small>協會案源的飯店或團體<b>直接聯絡你</b>時，請在帶團後 [天數] 天內填寫。</div></div>
+  <div class="steps3"><div><span class="step">STEP 1</span><b>帶團完成</b><span>導覽結束後</span></div><div><span class="step">STEP 2</span><b>填寫申報</b><span>約 1 分鐘</span></div><div><span class="step">STEP 3</span><b>協會確認</b><span>依接團規則處理</span></div></div>
+  <div class="fgrid"><label class="f" for="f-97388987">申報老師姓名<span class="req">*</span><input id="f-97388987" type="text" name="申報老師姓名" required></label><label class="f" for="f-45990977">飯店／客戶名稱<span class="req">*</span><input id="f-45990977" type="text" name="飯店或客戶名稱" required></label></div>
+  <div class="fgrid"><label class="f" for="f-46356741">導覽日期<span class="req">*</span><input id="f-46356741" type="date" name="導覽日期" required></label><label class="f" for="f-67754955">人數<input id="f-67754955" type="number" name="人數"></label><label class="f" for="f-71313885">導覽費用（元）<input id="f-71313885" type="number" name="導覽費用"></label></div>
+  <div class="f" role="group" aria-label="這位客戶最早是透過協會接洽的嗎？">這位客戶最早是透過協會接洽的嗎？<span class="req">*</span><div class="pills" data-required data-label="這位客戶最早是透過協會接洽的嗎？"><label><input type="radio" name="最早是否透過協會接洽" value="是"><span>是</span></label><label><input type="radio" name="最早是否透過協會接洽" value="不是"><span>不是</span></label><label><input type="radio" name="最早是否透過協會接洽" value="不確定"><span>不確定</span></label></div></div>
+  <label class="f" for="f-62376324">備註<textarea id="f-62376324" name="備註" placeholder=""></textarea></label>
+  <label class="hp" aria-hidden="true">請勿填寫<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+  <p class="form-msg" role="status" hidden></p>
+  <button class="btn" type="submit" style="align-self: flex-start">送出申報</button>
+</form>
+</div>
+
+  <div id="panel-board" role="tabpanel" hidden>
+    <div class="kanban">
+      <div class="panel" style="gap: 12px"><div class="row" style="justify-content: space-between"><b>待派案</b><span class="muted" style="font-size: 13px">示範</span></div>
+        <div class="case"><span class="tag" style="border: 0; padding: 0">[日期]・[人數] 人・[語言]</span><b style="font-size: 15px">[地點／需求摘要]</b><span class="muted" style="font-size: 13px">尚未派案</span></div>
+      </div>
+      <div class="panel" style="gap: 12px"><div class="row" style="justify-content: space-between"><b>已派案</b><span class="muted" style="font-size: 13px">示範</span></div>
+        <div class="case"><span class="tag" style="border: 0; padding: 0">[日期]・[人數] 人・[語言]</span><b style="font-size: 15px">[地點／需求摘要]</b><span class="muted" style="font-size: 13px">負責老師：[姓名]</span></div>
+        <div class="case"><span class="tag" style="border: 0; padding: 0">[日期]・[人數] 人・[語言]</span><b style="font-size: 15px">[地點／需求摘要]</b><span class="muted" style="font-size: 13px">負責老師：[姓名]</span></div>
+      </div>
+      <div class="panel" style="gap: 12px"><div class="row" style="justify-content: space-between"><b>已完成</b><span class="muted" style="font-size: 13px">示範</span></div>
+        <div class="case"><span class="tag" style="border: 0; padding: 0">[日期]・[人數] 人・[語言]</span><b style="font-size: 15px">[地點／需求摘要]</b><span class="muted" style="font-size: 13px">已回報・待請款</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="panel-meetings" role="tabpanel" hidden>
+    <a class="list-row" href="#meetings"><span class="date">[YYYY.MM.DD]</span><span class="tag">理監事會</span><span class="title">[會議名稱]</span><span class="muted" style="font-size: 13px">紀錄・照片</span></a>
+    <a class="list-row" href="#meetings"><span class="date">[YYYY.MM.DD]</span><span class="tag">會員大會</span><span class="title">[會議名稱]</span><span class="muted" style="font-size: 13px">紀錄・照片</span></a>
+    <a class="list-row" href="#meetings"><span class="date">[YYYY.MM.DD]</span><span class="tag">理監事會</span><span class="title">[會議名稱]</span><span class="muted" style="font-size: 13px">紀錄・照片</span></a>
+  </div>
+
+</section>
+
+</main>
+<div id="site-footer"></div>
+<script src="config.js"></script>
+<script src="site.js"></script>
+<script src="data.js"></script>
+<script src="forms.js"></script>
+</body>
+</html>

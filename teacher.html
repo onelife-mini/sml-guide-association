@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="日月潭觀光導覽暨交流協會：日月潭在地導覽老師組成的協會，飯店與團體導覽需求由協會窗口統一接洽。">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>老師介紹｜日月潭觀光導覽暨交流協會</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Barlow+Condensed:ital,wght@1,700;1,800&display=swap">
+<link rel="stylesheet" href="style.css">
+<style>
+.profile { display: flex; flex-wrap: wrap; gap: 56px; align-items: flex-start; }
+.profile .portrait { flex: 1 1 400px; aspect-ratio: 4 / 5; max-height: 640px; }
+.profile .portrait .quote { position: absolute; top: 24px; right: 24px; background: var(--bg); color: var(--fg); padding: 18px 12px; writing-mode: vertical-rl; font-size: 20px; font-weight: 900; line-height: 1.7; }
+.profile .info { flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 24px; padding-top: 12px; }
+.facts { display: grid; grid-template-columns: auto 1fr; gap: 10px 24px; border-block: 1px solid var(--line); padding-block: 18px; margin: 0; font-size: 15px; }
+.facts dt { color: var(--muted); }
+.facts dd { margin: 0; font-weight: 500; }
+.route .ph { aspect-ratio: 16 / 10; }
+</style>
+</head>
+<body data-page="teachers">
+<div id="site-header"></div>
+<main id="detail">
+
+<div class="wrap crumb"><a href="teachers.html">導覽老師</a>　／　[老師姓名]</div>
+
+<section class="wrap section" style="padding-top: 28px">
+  <div class="profile">
+    <div class="ph portrait">老師照片待補<span class="quote">[老師的一句話]</span></div>
+    <div class="info">
+      <div class="stack" style="gap: 6px"><h1 style="font-size: clamp(32px, 4vw, 44px)">[老師姓名]</h1><span class="muted">[英文名／族名]</span></div>
+      <div class="row" style="gap: 10px">
+        <span class="tag solid">[專長一]</span><span class="tag solid">[專長二]</span><span class="tag">中文</span><span class="tag">[其他語言]</span>
+      </div>
+      <dl class="facts">
+        <dt>導覽年資</dt><dd>[年資]</dd>
+        <dt>居住地</dt><dd>[鄉鎮／部落]</dd>
+        <dt>相關證照</dt><dd>[證照名稱]</dd>
+      </dl>
+      <p class="lead">[自我介紹 150 字以內：從什麼時候開始導覽、最喜歡帶旅人認識日月潭的哪一面、導覽的風格。]</p>
+    </div>
+  </div>
+</section>
+
+<section class="soft">
+  <div class="wrap section stack" style="gap: 32px">
+    <div class="eyebrow"><h2>擅長的導覽路線</h2></div>
+    <div class="grid">
+      <div class="panel white route" style="padding: 0; gap: 0"><div class="ph">[ 路線照片 ]</div><div class="stack" style="padding: 20px 24px; gap: 8px"><b style="font-size: 18px">[路線名稱]</b><span class="muted" style="font-size: 14px">[時間長度]・[適合對象]</span></div></div>
+      <div class="panel white route" style="padding: 0; gap: 0"><div class="ph">[ 路線照片 ]</div><div class="stack" style="padding: 20px 24px; gap: 8px"><b style="font-size: 18px">[路線名稱]</b><span class="muted" style="font-size: 14px">[時間長度]・[適合對象]</span></div></div>
+      <div class="panel white route" style="padding: 0; gap: 0"><div class="ph">[ 路線照片 ]</div><div class="stack" style="padding: 20px 24px; gap: 8px"><b style="font-size: 18px">[路線名稱]</b><span class="muted" style="font-size: 14px">[時間長度]・[適合對象]</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap section stack" style="gap: 28px">
+  <div class="eyebrow"><h2>導覽現場</h2></div>
+  <div class="grid" style="gap: 12px">
+    <div class="ph" style="aspect-ratio: 4 / 3">[ 導覽照片 ]</div>
+    <div class="ph" style="aspect-ratio: 4 / 3">[ 導覽照片 ]</div>
+    <div class="ph" style="aspect-ratio: 4 / 3">[ 導覽照片 ]</div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <div class="stack" style="gap: 8px"><h2>想請這位老師導覽？</h2><p>所有導覽皆由協會窗口統一安排，預約時註明老師姓名即可。</p></div>
+    <a class="btn light" href="booking.html">透過協會預約</a>
+  </div>
+</section>
+
+<div class="wrap row" style="justify-content: space-between; padding-block: 40px; font-weight: 700">
+  <a href="teachers.html" style="text-decoration: none">← 回老師列表</a>
+  <a href="teacher.html" style="text-decoration: none">下一位老師 →</a>
+</div>
+
+</main>
+<div id="site-footer"></div>
+<script src="config.js"></script>
+<script src="site.js"></script>
+<script src="data.js"></script>
+</body>
+</html>

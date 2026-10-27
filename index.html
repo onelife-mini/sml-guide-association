@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="日月潭觀光導覽暨交流協會：日月潭在地導覽老師組成的協會，飯店與團體導覽需求由協會窗口統一接洽。">
+<title>日月潭觀光導覽暨交流協會</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Barlow+Condensed:ital,wght@1,700;1,800&display=swap">
+<link rel="stylesheet" href="style.css">
+<style>
+.home-hero { display: flex; flex-wrap: wrap; padding-top: 8px; }
+.home-hero .copy { flex: 1 1 480px; display: flex; flex-direction: column; gap: 24px; padding: 0 40px 48px 0; min-width: 0; }
+.home-hero .photo { flex: 1 1 460px; min-height: 420px; }
+.home-hero h1 { font-size: clamp(28px, 3.6vw, 38px); line-height: 1.45; }
+.home-hero .band { align-self: flex-start; font-size: 15px; font-weight: 700; padding-block: 14px; }
+@media (max-width: 719px) { .home-hero .copy { padding-right: 0; } .home-hero .photo { min-height: 260px; } }
+.split { display: flex; flex-wrap: wrap; gap: 40px; }
+.split > * { flex: 1 1 440px; min-width: 0; }
+.does { display: flex; flex-direction: column; }
+.does div { display: flex; flex-wrap: wrap; gap: 4px 24px; padding-block: 18px; border-top: 1px solid var(--line); }
+.does div:last-child { border-bottom: 1px solid var(--line); }
+.does b { flex: 0 0 11em; font-size: 17px; }
+.does span { flex: 1 1 240px; color: var(--fg-soft); font-size: 15px; }
+</style>
+</head>
+<body data-page="home">
+<div id="site-header"></div>
+<main>
+
+<section class="wrap home-hero">
+  <div class="copy">
+    <p class="band">立案人民團體｜立案字號 [字號]</p>
+    <h1>日月潭在地導覽老師</h1>
+    <p class="lead">協會目前有 40 多位會員老師。我們定期上課、參訪、彼此交流；飯店與團體的導覽需求，由協會窗口統一接洽，再依規則安排老師。</p>
+    <div class="row">
+      <a class="btn" href="booking.html">預約導覽</a>
+      <a class="btn ghost" href="about.html">認識協會</a>
+    </div>
+  </div>
+  <figure class="photo shot"><img src="img/aerial.jpg" alt="從空中看日月潭湖面與周邊山巒" width="1600" height="900"><figcaption>日月潭</figcaption></figure>
+</section>
+
+<section class="soft" style="margin-top: 56px">
+  <div class="wrap section stack" style="gap: 32px">
+    <div class="row" style="justify-content: space-between; align-items: flex-end">
+      <h2 style="font-size: 26px">導覽老師</h2>
+      <a href="teachers.html" style="font-weight: 700; font-size: 15px; color: var(--accent)">看全部老師</a>
+    </div>
+    <div class="grid people" id="home-teachers">
+      <a class="teacher" href="teacher.html"><div class="ph">老師照片待補<span class="quote">[老師的一句話]</span></div><div class="meta"><span><small>[專長]・[語言]</small><b>[老師姓名]</b></span></div></a>
+      <a class="teacher" href="teacher.html"><div class="ph">老師照片待補<span class="quote">[老師的一句話]</span></div><div class="meta"><span><small>[專長]・[語言]</small><b>[老師姓名]</b></span></div></a>
+      <a class="teacher" href="teacher.html"><div class="ph">老師照片待補<span class="quote">[老師的一句話]</span></div><div class="meta"><span><small>[專長]・[語言]</small><b>[老師姓名]</b></span></div></a>
+    </div>
+  </div>
+</section>
+
+<section class="wrap section">
+  <div class="split" style="align-items: flex-start">
+    <div class="stack" style="gap: 16px; flex-basis: 320px">
+      <h2 style="font-size: 26px">協會在做什麼</h2>
+      <a href="about.html" style="font-weight: 700; font-size: 15px; color: var(--accent)">關於協會</a>
+    </div>
+    <div class="does" style="flex-grow: 2">
+      <div><b>課程與講座</b><span>定期邀請講師，補充導覽知識與帶團技巧。</span></div>
+      <div><b>老師交流參訪</b><span>到其他地方看別人怎麼導覽，回來彼此分享。</span></div>
+      <div><b>飯店導覽統一窗口</b><span>飯店與團體的需求由協會接洽，依接團規則派給老師。</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap" style="padding-bottom: 88px">
+  <div class="split">
+    <div class="stack" style="gap: 0" id="home-news">
+      <h2 style="font-size: 22px; margin-bottom: 16px">最新消息</h2>
+      <a class="list-row" href="news-post.html"><span class="date">[日期]</span><span class="title">[公告標題]</span></a>
+      <a class="list-row" href="news-post.html"><span class="date">[日期]</span><span class="title">[公告標題]</span></a>
+      <a class="list-row" href="news-post.html"><span class="date">[日期]</span><span class="title">[公告標題]</span></a>
+    </div>
+    <a class="stack" id="home-activity" href="activity.html" style="gap: 14px; text-decoration: none">
+      <h2 style="font-size: 22px">最近一場活動</h2>
+      <div class="ph" style="aspect-ratio: 16 / 9">[ 參訪活動照片 ]</div>
+      <span><span class="tag">參訪</span>　<b>[活動名稱]</b></span>
+    </a>
+  </div>
+</section>
+
+<section class="soft">
+  <div class="wrap section row" style="justify-content: space-between; align-items: center">
+    <div class="stack" style="gap: 8px">
+      <h2 style="font-size: clamp(22px, 3vw, 28px)">飯店、旅行社與團體的導覽需求</h2>
+      <p class="muted">請直接聯絡協會窗口，我們會依日期與語言安排老師。</p>
+    </div>
+    <a class="btn" href="booking.html">聯絡協會窗口</a>
+  </div>
+</section>
+
+</main>
+<div id="site-footer"></div>
+<script src="config.js"></script>
+<script src="site.js"></script>
+<script src="data.js"></script>
+</body>
+
+</html>
